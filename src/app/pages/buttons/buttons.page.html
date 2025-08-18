@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Botones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br />
+  <h6 class="ion-padding">Botón por defecto</h6>
+  <br />
+  <ion-button>Default</ion-button>
+  <br />
+  <h6 class="ion-padding">Botón con expand</h6>
+  <br />
+  <ion-button expand="full" color="success">Full button</ion-button>
+  <ion-button color="success" expand="block">Block button</ion-button>
+  <br />
+  <h6 class="ion-padding">Fill button</h6>
+  <br />
+  <ion-button color="warning" fill="clear">Clear button</ion-button>
+  <ion-button color="warning" fill="outline">Outline button</ion-button>
+  <ion-button color="warning" fill="Solid">Solid button</ion-button>
+  <br />
+  <h6 class="ion-padding">Shape buttons</h6>
+  <ion-button color="danger" shape="round">Round button</ion-button>
+  <ion-button color="blank" shape="round">
+    <ion-icon name="heart" slot="icon-only" color="danger"></ion-icon>
+  </ion-button>
+  <ion-button color="danger" shape="pill">Pill button></ion-button>
+  <br />
+</ion-content>

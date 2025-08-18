@@ -1,0 +1,49 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Recordatorio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1 style="text-align:center; color: var(--ion-text-color, #2c3e50); margin-bottom: 10px;">🛒 Lista de compras</h1>
+  <ol style="background: var(--ion-item-background, #f8f9fa); border-radius: 10px; padding: 15px;">
+    @for(producto of lista_compras; track $index) {
+      <li style="padding: 6px 0; font-size: 1.1em; border-bottom: 1px solid var(--ion-border-color, #e0e0e0);">
+        {{ producto }}
+      </li>
+    }
+  </ol>
+
+  <br>
+
+  <h1 style="text-align:center; color: var(--ion-text-color, #2c3e50); margin-bottom: 10px;">🧾 Lista de compras 2</h1>
+  <ol style="background: var(--ion-item-background, #f8f9fa); border-radius: 10px; padding: 15px;">
+    @for(producto of lista_compras2; track $index) {
+      <li style="display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--ion-border-color, #e0e0e0);">
+        <span>
+          <strong>{{ producto.name }}</strong> - 
+          <span style="color: var(--ion-color-success, #16a085);">{{ producto.price | currency }}</span>
+        </span>
+        <span>
+          @if(producto.available) {
+            <button (click)="agregarProducto(producto)" style="padding:6px 12px; border-radius: 8px; background: var(--ion-color-success, #27ae60); color: var(--ion-color-light, white); border: none; font-size: 1.2em; cursor: pointer;">✅</button>
+          } @else {
+            <button (click)="agregarProducto(producto)" style="padding:6px 12px; border-radius: 8px; background: var(--ion-color-danger, #e74c3c); color: var(--ion-color-light, white); border: none; font-size: 1.2em; cursor: pointer;">❌</button>
+          }
+        </span>
+      </li>
+    }
+  </ol>
+
+  <br>
+  <div style="color: var(--ion-color-primary-tint, #d0ebff); width: 70%; max-width: 400px; margin: 15px auto; padding: 10px 0; border-radius: 10px; color: var(--ion-text-color, #222); text-align: center;">
+    <h6 style="margin: 0;">{{mensaje}}</h6>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <button (click)="sumaProductos()" style="background-color: var(--ion-color-primary, #2980b9); padding: 12px 30px; border: none; border-radius: 8px; color: var(--ion-color-light, white); font-weight: bold; font-size: 1.1em; margin-bottom: 10px; cursor: pointer;">
+      Comprar
+    </button>
+    <p style="font-size: 1.2em; color: var(--ion-text-color, #34495e); font-weight: bold;">Total: {{total | currency}}</p>
+  </div>
+</ion-content>
