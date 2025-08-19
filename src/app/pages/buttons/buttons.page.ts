@@ -10,7 +10,7 @@ import {
   IonIcon,
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { heart } from 'ionicons/icons';
+import { heart, beer, flame, star, thumbsUp, leaf } from 'ionicons/icons';
 
 @Component({
   selector: 'app-buttons',
@@ -30,7 +30,7 @@ import { heart } from 'ionicons/icons';
 })
 export class ButtonsPage implements OnInit {
   constructor() {
-    addIcons({ heart });
+    addIcons({heart,beer,flame,star,thumbsUp,leaf});
   }
 
   ngOnInit() {
