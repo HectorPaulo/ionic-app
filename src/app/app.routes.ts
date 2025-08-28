@@ -22,4 +22,16 @@ export const routes: Routes = [
     path: 'buttons',
     loadComponent: () => import('./pages/buttons/buttons.page').then( m => m.ButtonsPage)
   },
+  {
+    path: 'action-sheet',
+    loadComponent: () => import('./pages/action-sheet/action-sheet.page').then( m => m.ActionSheetPage)
+  },
+  {
+    path: 'cards',
+    loadComponent: () => import('./pages/cards/cards.page').then( m => m.CardsPage)
+  },
+  {
+    path: 'contactos',
+    loadComponent: () => import('./pages/action-sheet/contactos/contactos.page').then( m => m.ContactosPage)
+  },
 ];

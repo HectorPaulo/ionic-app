@@ -1,13 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>alerts</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<div style="padding-top: 20px">
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">alerts</ion-title>
+      <ion-title>Página de alertas</ion-title>
     </ion-toolbar>
   </ion-header>
+</div>
+
+<ion-content [fullscreen]="true">
+  <ion-button color="success" expand="full" class="ion-margin" (click)="openAlert()">Abrir alerta</ion-button>
+  <ion-button color="success" expand="full" class="ion-margin" (click)="openAlertButtons()">Abrir advertencia</ion-button>
+  <ion-button color="success" expand="full" class="ion-margin" (click)="openLogin()">Login</ion-button>
+  <ion-button color="success" expand="full" class="ion-margin" (click)="openCustomized()">Alerta personalizada</ion-button>
+
 </ion-content>

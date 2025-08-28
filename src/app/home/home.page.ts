@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {IonList, IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonIcon } from '@ionic/angular/standalone';
 import {addIcons} from 'ionicons';
-import {alarm, balloon, home} from 'ionicons/icons';
+import {alarm, balloon, home, bug, cube} from 'ionicons/icons';
 
 interface menuItem {
   name: string;
@@ -36,9 +36,21 @@ export class HomePage {
       url: '/buttons',
       icon: 'balloon',
       color: 'success'
-    }
+    },
+    {
+      name: 'Action Sheet',
+      url: '/action-sheet',
+      icon: 'bug',
+      color: 'danger'
+    },
+    {
+      name: 'Cards',
+      url: '/cards',
+      icon: 'cube',
+      color: 'tertiary'
+    },
   ];
   constructor() {
-    addIcons({home, alarm, balloon})
+    addIcons({home, alarm, balloon, bug, cube})
   }
 }
