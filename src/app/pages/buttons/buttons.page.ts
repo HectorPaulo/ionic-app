@@ -11,6 +11,7 @@ import {
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { heart, beer, flame, star, thumbsUp, leaf } from 'ionicons/icons';
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 @Component({
   selector: 'app-buttons',
@@ -26,7 +27,8 @@ import { heart, beer, flame, star, thumbsUp, leaf } from 'ionicons/icons';
     IonToolbar,
     CommonModule,
     FormsModule,
-  ],
+    HeaderComponent
+],
 })
 export class ButtonsPage implements OnInit {
   constructor() {

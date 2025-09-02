@@ -16,6 +16,7 @@ import {
 import { addIcons } from 'ionicons';
 import { call, pencil, person, trash } from 'ionicons/icons';
 import { Icon } from 'ionicons/dist/types/components/icon/icon';
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 interface Contacto {
   nombre: string;
@@ -39,7 +40,8 @@ interface Contacto {
     IonToolbar,
     CommonModule,
     FormsModule,
-  ],
+    HeaderComponent
+],
 })
 export class ContactosPage implements OnInit {
   contactos: Contacto[] = [
@@ -52,6 +54,7 @@ export class ContactosPage implements OnInit {
   private actionSheetCtrl = inject(ActionSheetController);
 
   constructor() {
+      addIcons({person});
   }
 
   ngOnInit() {

@@ -10,6 +10,7 @@ import {
   AlertController,
   IonIcon,
 } from '@ionic/angular/standalone';
+import { HeaderComponent } from 'src/app/components/header/header.component';
 
 @Component({
   selector: 'app-alerts',
@@ -24,6 +25,7 @@ import {
     IonToolbar,
     CommonModule,
     FormsModule,
+    HeaderComponent
   ],
 })
 export class AlertsPage implements OnInit {

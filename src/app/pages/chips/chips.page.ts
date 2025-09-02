@@ -6,31 +6,25 @@ import {
   IonHeader,
   IonTitle,
   IonToolbar,
-  IonCard,
-  IonCardHeader,
-  IonCardSubtitle,
-  IonCardTitle,
-  IonCardContent,
-  IonButton,
+  IonChip,
   IonIcon,
+  IonAvatar,
+  IonLabel,
 } from '@ionic/angular/standalone';
 import { HeaderComponent } from 'src/app/components/header/header.component';
 import { addIcons } from 'ionicons';
-import { call, person } from 'ionicons/icons';
+import { pin, close } from 'ionicons/icons';
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.page.html',
-  styleUrls: ['./cards.page.scss'],
+  selector: 'app-chips',
+  templateUrl: './chips.page.html',
+  styleUrls: ['./chips.page.scss'],
   standalone: true,
   imports: [
+    IonLabel,
+    IonAvatar,
     IonIcon,
-    IonButton,
-    IonCardContent,
-    IonCardTitle,
-    IonCardSubtitle,
-    IonCardHeader,
-    IonCard,
+    IonChip,
     IonContent,
     IonHeader,
     IonTitle,
@@ -40,9 +34,9 @@ import { call, person } from 'ionicons/icons';
     HeaderComponent,
   ],
 })
-export class CardsPage implements OnInit {
+export class ChipsPage implements OnInit {
   constructor() {
-    addIcons({ call, person });
+    addIcons({ pin, close });
   }
 
   ngOnInit() {}

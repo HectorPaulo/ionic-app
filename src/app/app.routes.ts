@@ -34,4 +34,8 @@ export const routes: Routes = [
     path: 'contactos',
     loadComponent: () => import('./pages/action-sheet/contactos/contactos.page').then( m => m.ContactosPage)
   },
+  {
+    path: 'chips',
+    loadComponent: () => import('./pages/chips/chips.page').then( m => m.ChipsPage)
+  },
 ];

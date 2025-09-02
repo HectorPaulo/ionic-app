@@ -5,6 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, ActionSheetCont
 import { addIcons } from 'ionicons';
 import { cart, cash, heart } from 'ionicons/icons';
 import { Router } from '@angular/router';
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 @Component({
   selector: 'app-action-sheet',
@@ -20,7 +21,8 @@ import { Router } from '@angular/router';
     CommonModule,
     FormsModule,
     IonButton,
-  ],
+    HeaderComponent
+],
 })
 export class ActionSheetPage implements OnInit {
 openContactos() {

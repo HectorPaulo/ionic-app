@@ -1,13 +1,95 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cards</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Cards"></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cards</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit
+      repellat molestiae eligendi. Doloribus cupiditate ducimus expedita
+      impedit, beatae quas totam eligendi quis ea inventore, porro laborum esse
+      vitae illo!
+    </p>
+  </ion-card>
+  <ion-card mode="ios">
+    <ion-card-header>
+      <ion-card-subtitle>Este es un subtítulo</ion-card-subtitle>
+      <ion-card-title>Titulo de la card</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+      voluptatibus aperiam maxime quas. Placeat ab, molestias sed ad nam, quod
+      similique deserunt maiores aliquid ipsam nesciunt, expedita tenetur!
+      Molestias, tempore.
+    </ion-card-content>
+  </ion-card>
+  <ion-card mode="md" class="ion-text-center">
+    <img src="assets/sonic.png" alt="Blue cartoon hedgehog Sonic standing confidently with a cheerful expression in a bright and playful setting" />
+    <ion-card-header>
+      <ion-card-title>Él es Sonic</ion-card-title>
+      <ion-card-subtitle>Este es un sonic</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+      voluptatibus aperiam maxime quas. Placeat ab, molestias sed ad nam, quod
+      similique deserunt maiores aliquid ipsam nesciunt, expedita tenetur!
+      Molestias, tempore.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Usuario</ion-card-title>
+      <ion-card-subtitle>paulo@gmail.com</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+      voluptatibus aperiam maxime quas. Placeat ab, molestias sed ad nam, quod
+      similique deserunt maiores aliquid ipsam nesciunt, expedita tenetur!
+      Molestias, tempore.
+    </ion-card-content>
+    <div class="ion-text-center">
+      <ion-button fill="clear">
+        <ion-icon name="call" slot="end"></ion-icon>
+        Llamar
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon name="person" slot="end"></ion-icon>
+      Editar
+    </ion-button>
+  </div>
+  </ion-card>
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>Titulo perron</ion-card-title>
+      <ion-card-subtitle>Subtitulo chido</ion-card-subtitle>
+      <ion-card-content>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deleniti repellat, officiis fuga similique ipsa ut itaque suscipit maxime labore repellendus magni tempora illo non voluptate numquam quia dolores hic.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>Titulo perron</ion-card-title>
+      <ion-card-subtitle>Subtitulo chido</ion-card-subtitle>
+      <ion-card-content>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deleniti repellat, officiis fuga similique ipsa ut itaque suscipit maxime labore repellendus magni tempora illo non voluptate numquam quia dolores hic.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-card-title>Titulo perron</ion-card-title>
+      <ion-card-subtitle>Subtitulo chido</ion-card-subtitle>
+      <ion-card-content>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deleniti repellat, officiis fuga similique ipsa ut itaque suscipit maxime labore repellendus magni tempora illo non voluptate numquam quia dolores hic.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Titulo perron</ion-card-title>
+      <ion-card-subtitle>Subtitulo chido</ion-card-subtitle>
+      <ion-card-content>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deleniti repellat, officiis fuga similique ipsa ut itaque suscipit maxime labore repellendus magni tempora illo non voluptate numquam quia dolores hic.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
