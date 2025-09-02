@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {IonList, IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonIcon } from '@ionic/angular/standalone';
 import {addIcons} from 'ionicons';
-import {alarm, balloon, home, bug, cube, beer} from 'ionicons/icons';
+import {alarm, balloon, home, bug, cube, beer, person} from 'ionicons/icons';
 
 interface menuItem {
   name: string;
@@ -55,8 +55,14 @@ export class HomePage {
       icon: 'beer',
       color: 'warning'
     },
+    {
+      name: 'Posts',
+      url: '/posts',
+      icon: 'person',
+      color: 'success'
+    },
   ];
   constructor() {
-    addIcons({home, alarm, balloon, bug, cube, beer})
+    addIcons({home, alarm, person, balloon, bug, cube, beer})
   }
 }

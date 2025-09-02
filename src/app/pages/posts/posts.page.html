@@ -1,0 +1,26 @@
+<app-header titulo="Feed"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card mode="ios" *ngFor="let post of posts">
+    <ion-card-header>
+      <ion-card-title>{{ post.titulo }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      {{ post.descripcion }}
+    </ion-card-content>
+    <img class="ion-text-center" [src]="post.imagen" [alt]="post.titulo" />
+    <ion-card-subtitle>Comentarios</ion-card-subtitle>
+    <div *ngFor="let comentario of post.comentarios">
+      <ion-chip>
+        <ion-avatar>
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>{{ comentario.usuario }}</ion-label>
+        <ion-label>:</ion-label>
+      </ion-chip>
+      <p class="ion-text-justify">
+        {{ comentario.comentario }}
+      </p>
+    </div>
+  </ion-card>
+</ion-content>
