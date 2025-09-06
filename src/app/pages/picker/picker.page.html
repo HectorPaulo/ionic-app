@@ -1,0 +1,43 @@
+<app-header titulo="Pickers"></app-header>
+
+<ion-content [fullscreen]="true">
+  <h3>Selecciona tu refresco favorito</h3>
+  <ion-picker>
+    <ion-picker-column value="0">
+      @for(refresco of refrescos; track $index) {
+        <ion-picker-column-option [value]="$index">
+        {{refresco}}
+      </ion-picker-column-option>
+    }
+  </ion-picker-column>
+</ion-picker>
+
+<ion-picker>
+<ion-picker-column value="0">
+  @for(refresco of refrescos; track $index) {
+    <ion-picker-column-option [value]="$index">
+      {{refresco}}
+    </ion-picker-column-option>
+  }
+    <div slot="suffix">🥤</div>
+  </ion-picker-column>
+</ion-picker>
+
+<ion-picker>
+<ion-picker-column value="0">
+  @for(refresco of refrescos; track $index) {
+    <ion-picker-column-option [value]="$index">
+      {{refresco}}
+    </ion-picker-column-option>
+  }
+  </ion-picker-column>
+<ion-picker-column value="0">
+  @for(size of sizes; track $index) {
+    <ion-picker-column-option [value]="$index">
+      {{size}}
+    </ion-picker-column-option>
+  }
+  </ion-picker-column>
+</ion-picker>
+
+</ion-content>

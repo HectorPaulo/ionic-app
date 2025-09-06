@@ -1,0 +1,17 @@
+<app-header titulo="Date time page"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-datetime></ion-datetime>
+  <ion-datetime min="1993-09-01" max="2025-09-01"></ion-datetime>
+  <ion-datetime dayValues="5, 10, 15, 20, 25, 30" 
+  hourValues="3, 6, 9, 12"
+  minuteValues="0, 15, 30, 45"></ion-datetime>
+  <ion-datetime hourCycle="h23"></ion-datetime>
+  <ion-datetime presentation="month-year"></ion-datetime>
+  <ion-datetime presentation="year"></ion-datetime>
+  <ion-datetime presentation="month"></ion-datetime>
+  <ion-datetime presentation="date"></ion-datetime>
+  <ion-datetime presentation="time"></ion-datetime>
+  <ion-datetime preferWheel="true"></ion-datetime>
+  <ion-datetime multiple="true" value=""></ion-datetime>
+</ion-content>

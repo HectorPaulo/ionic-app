@@ -42,4 +42,12 @@ export const routes: Routes = [
     path: 'posts',
     loadComponent: () => import('./pages/posts/posts.page').then( m => m.PostsPage)
   },
+  {
+    path: 'datetime',
+    loadComponent: () => import('./pages/datetime/datetime.page').then( m => m.DatetimePage)
+  },
+  {
+    path: 'picker',
+    loadComponent: () => import('./pages/picker/picker.page').then( m => m.PickerPage)
+  },
 ];
